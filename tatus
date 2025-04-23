@@ -1,0 +1,24 @@
+[33mcommit 6c4c1e8e71a85fb7d76fddd2ad21589a3e353131[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Bun Hoang <hoangminhbun@gmail.com>
+Date:   Wed Apr 23 13:32:20 2025 +0700
+
+    Remove node_modules and add to .gitignore
+
+[33mcommit 3a1176e54473fc5fbf0a2ef12dbe730769e72783[m
+Merge: d34c36c 3f78833
+Author: Bun Hoang <hoangminhbun@gmail.com>
+Date:   Wed Apr 23 12:27:04 2025 +0700
+
+    Merge branch 'main' of https://github.com/bun25/phancong-nodejs
+
+[33mcommit d34c36ccda6087490209a4785746cfe43a5037b5[m
+Author: Bun Hoang <hoangminhbun@gmail.com>
+Date:   Wed Apr 23 12:12:07 2025 +0700
+
+    Deploy initial server
+
+[33mcommit 3f7883393fb8c6df0def4e9a598d4d89c428c40f[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: bun25 <hoangminhbun@gmail.com>
+Date:   Wed Apr 23 11:12:21 2025 +0700
+
+    Initial commit
