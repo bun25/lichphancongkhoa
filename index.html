@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Chia Giờ Làm Việc Khoa Đông Y</title>
+</head>
+<body>
+    <h1>Lịch Chia Giờ Làm Việc Khoa Đông Y</h1>
+    
+    <button id="taoSheet">Tạo sheet cho nhân viên</button>
+    <button id="chiaThuThuat">Chia giờ thực hiện thủ thuật</button>
+
+    <script>
+        
+
+        const taoSheetButton = document.getElementById("taoSheet");
+        taoSheetButton.addEventListener("click", async () => {
+            try {
+                const response = await fetch("http://localhost:3000/createSheets", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        employeeSheetName: "nhân viên",
+                        templateSheetName: "mẫu",
+                    }),
+                });
+                const result = await response.text();
+                alert(result);
+            } catch (error) {
+                alert("Lỗi: " + error.message);
+            }
+        });
+
+        const chiaThuThuatButton = document.getElementById("chiaThuThuat");
+        chiaThuThuatButton.addEventListener("click", async () => {
+            try {
+                const response = await fetch("http://localhost:3000/allocateProcedures", {
+                    method: "POST",
+                });
+                const result = await response.text();
+                alert(result);
+            } catch (error) {
+                alert("Lỗi: " + error.message);
+            }
+        });
+    </script>
+</body>
+</html>
+

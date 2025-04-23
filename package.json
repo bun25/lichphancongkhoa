@@ -1,0 +1,23 @@
+{
+  "name": "quan-ly-thoi-gian",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node googleSheets.js",
+    "electron-start": "electron .",
+    "dev": "concurrently --kill-others-on-fail \"npm start\" \"npm run electron-start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "googleapis": "^148.0.0"
+  },
+  "devDependencies": {
+    "electron": "^26.2.0",
+    "concurrently": "^8.2.2"
+  }
+}
