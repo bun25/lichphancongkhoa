@@ -1,3 +1,4 @@
 node_modules/
 evident-lock-359511-1db86211f7b6.json
-
+*.log
+*.json
