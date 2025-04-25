@@ -5,9 +5,8 @@ const app = express();
 
 app.use(express.json());
 
-const credentials = JSON.parse(
-    readFileSync("c:\\quan ly thoi gian\\evident-lock-359511-1db86211f7b6.json", "utf8")
-);
+const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
+
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets"];
 const auth = new google.auth.GoogleAuth({
